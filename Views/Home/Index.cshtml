@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>bu benim 2. web sitem</title>
+</head>
+<body>
+    <div> 
+       <input type="number" id="sayi1" />
+        <br />
+        <input type="number" id="sayi2" />
+        <br />
+        <input type="submit" value="topla" onclick="toplaVeGoster()"/>
+        <p id="sonuc"></p>
+        <div>
+            <script>
+                function toplaVeGoster() {
+                    let birinciSayi = Number(document.getElementById('sayi1').value);
+                    let ikinciSayi = Number(document.getElementById('sayi2').value);
+
+                    let toplam = birinciSayi + ikinciSayi;
+
+                    document.getElementById('sonuc').innerText = "Toplam: " + toplam;
+
+                }
+                
+            </script>
+
+        </div>
+
+        
+
+
+    </div>
+</body>
+</html>
